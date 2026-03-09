@@ -301,6 +301,8 @@ if {$cnfg(fdev) eq "u250" || $cnfg(fdev) eq "u200"} {
     # Create instance: xdma_0, and set properties
     set cmd "set xdma_0 \[ create_bd_cell -type ip -vlnv xilinx.com:ip:xdma:4.1 xdma_0 ]
             set_property -dict \[ list \
+              CONFIG.pcie_blk_locn {X1Y2} \
+              CONFIG.select_quad {GTY_Quad_227} \
               CONFIG.xdma_pcie_64bit_en {true} \
               CONFIG.axi_bypass_64bit_en {true} \
               CONFIG.axi_bypass_prefetchable {true} \
