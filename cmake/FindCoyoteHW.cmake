@@ -372,12 +372,12 @@ macro(validation_checks_hw)
             set(MC_SIZE 29)
             set(N_STRIPE_CHAN 32)
             set(MEM_OFFSET 0)
-
+        
         # u200
         elseif(FDEV_NAME STREQUAL "u200")
             # Platform details
             set(FPGA_ARCH "ultrascale_plus")
-            set(FPGA_PART xcu200-fsgd2104-2-e CACHE STRING "FPGA Part" FORCE)
+	    set(FPGA_PART xcu200-fsgd2104-2-e CACHE STRING "FPGA Part" FORCE)
 
             # DDR configuration
             set(DDR_SIZE 34)
@@ -391,7 +391,7 @@ macro(validation_checks_hw)
             set(MC_SIZE ${DDR_SIZE}) 
             set(N_STRIPE_CHAN ${N_DDR_CHAN})
             set(MEM_OFFSET 0)
-
+        
         # u250
         elseif(FDEV_NAME STREQUAL "u250")
             # Platform details
