@@ -42,8 +42,12 @@ set(N_CONFIG 2)
 set(N_REGIONS 1)
 
 # Target platform u55c
-set(FDEV_NAME "u55c")
-set(FPLAN_PATH "${CMAKE_SOURCE_DIR}/floorplans/example_fplan_u55c.xdc")
+#set(FDEV_NAME "u55c")
+#set(FPLAN_PATH "${CMAKE_SOURCE_DIR}/floorplans/example_fplan_u55c.xdc")
+
+# Target platform u200
+set(FDEV_NAME "u200")
+set(FPLAN_PATH "${CMAKE_SOURCE_DIR}/floorplans/example_fplan_u200.xdc")
 
 # Target platform v80 
 # set(FDEV_NAME "v80")
